@@ -11,10 +11,10 @@ const mixedMessages =
 "OH MY GOD."];
 
 
-var randomQuote = arr => {
-    const randNum = Math.floor(Math.random() * arr.length);
-    return arr[randNum];
-};
+function randomQuote() {
+    const randNum = Math.floor(Math.random() * mixedMessages.length);
+    document.getElementById("quoteinput").value = mixedMessages[randNum];
+}
 
 
 console.log(randomQuote(mixedMessages))
