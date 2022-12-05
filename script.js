@@ -5,7 +5,16 @@ const mixedMessages =
 "We were on a break!",
 "Unagi.",
 "Pivot!",
-"Oh, I wish I could, but I don’t want to.",
+"Oh, I wish I could, but I dont want to.",
 "Oh I'm sorry. Did my back hurt your knife?",
 "I KNOW!",
-"OH MY GOD."]
+"OH MY GOD."];
+
+
+var randomQuote = arr => {
+    const randNum = Math.floor(Math.random() * arr.length);
+    return arr[randNum];
+};
+
+
+console.log(randomQuote(mixedMessages))
