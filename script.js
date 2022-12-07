@@ -1,3 +1,5 @@
+window.addEventListener('load', init)
+
 const mixedMessages = 
 ["How you doin?", 
 "Could I BE wearing any more clothes?!",
@@ -14,7 +16,15 @@ const mixedMessages =
 function randomQuote() {
     const randNum = Math.floor(Math.random() * mixedMessages.length);
     document.getElementById("quoteinput").value = mixedMessages[randNum];
-}
+};
+function init (){
+const textHover = document.getElementById('textHover');
+const pictureFriends = document.getElementById('boxFriends');
 
 
-console.log(randomQuote(mixedMessages))
+function makePicture() {
+    pictureFriends.style.display = 'flex'
+};
+
+textHover.onmouseover = makePicture
+    }
