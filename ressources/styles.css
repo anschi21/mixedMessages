@@ -49,11 +49,18 @@ h1 {
     transition: 0.6s;
 }
 
-#inputbutton {
-    border-color: #E1CB59;
+button {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: #E1CB59;
     font-weight: 400;
-    border-radius: 10%;
+    border-radius: 3%;
+}
+
+#inputbutton {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #E1CB59;
+    font-weight: 400;
+    border-radius: 3%;
 }
 
 #inputbutton:hover {
@@ -68,4 +75,9 @@ h1 {
     height: 30px;
     border-color: #E1CB59;
     color: white;
+}
+
+#answers {
+    display: flexbox;
+
 }
